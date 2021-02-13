@@ -7,15 +7,15 @@ import Post from '@components/Post';
 
 export default function Home({ posts }) {
   return (
-    <div className='container'>
+    <div>
       <Head>
         <title>WLD Ecommerce</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main>
+      <div className='container'>
         <Header title='WLD Ecommerce' />
-        <div className='posts'>
+        {/* <div className='posts'>
           {posts.map((p) => {
             return (
               <Post
@@ -26,10 +26,10 @@ export default function Home({ posts }) {
               />
             );
           })}
-        </div>
-      </main>
+        </div> */}
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }
